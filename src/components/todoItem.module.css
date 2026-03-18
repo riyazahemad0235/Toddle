@@ -1,0 +1,37 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px black solid;
+  word-break: break-all; /* Prevents long words from overflowing */
+}
+
+.todoText {
+  flex-grow: 1; /* Allows text to take up available space */
+  margin: 0 15px;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background: #d90429;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* This style is applied when a todo is completed */
+.completedItem .todoText {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
